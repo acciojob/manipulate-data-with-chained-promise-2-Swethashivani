@@ -5,7 +5,7 @@ function delayedPromise() {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve([1, 2, 3, 4]); // Initial array after 3 seconds
-        }, 2000);
+        });
     });
 }
 
@@ -27,7 +27,7 @@ delayedPromise()
                 const multipliedNumbers = evenNumbers.map(num => num * 2);
                 outputDiv.innerText = `[${multipliedNumbers.join(", ")}]`; // Update output div again
                 resolve(multipliedNumbers);
-            });
+            }, 2000);
         });
     });
 
