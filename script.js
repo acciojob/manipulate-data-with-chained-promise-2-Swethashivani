@@ -5,7 +5,7 @@ function delayedPromise() {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve([1, 2, 3, 4]); // Initial array after 3 seconds
-        }, 3000);
+        }, 2000);
     });
 }
 
