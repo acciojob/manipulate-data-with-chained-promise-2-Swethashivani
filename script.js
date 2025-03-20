@@ -27,7 +27,7 @@ delayedPromise()
                 const multipliedNumbers = evenNumbers.map(num => num * 2);
                 outputDiv.innerText = `[${multipliedNumbers.join(", ")}]`; // Update output div again
                 resolve(multipliedNumbers);
-            }, 2000);
+            });
         });
     });
 
