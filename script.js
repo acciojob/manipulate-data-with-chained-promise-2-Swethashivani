@@ -4,7 +4,7 @@ const outputDiv = document.getElementById("output");
 function delayedPromise() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve([1, 2, 3, 4]); // Initial array after 3 seconds
+            resolve([1, 2, 3, 4], 3000); // Initial array after 3 seconds
         });
     });
 }
